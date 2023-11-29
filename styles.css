@@ -1,0 +1,40 @@
+/* Ajoutez votre style CSS ici */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #888;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    border: 1px solid #ddd; /* Ajout de la bordure */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
