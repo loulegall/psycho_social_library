@@ -92,7 +92,7 @@ button {
 }
 
 button:hover {
-    background-color: #66ccff;
+    background-color: #222;
 }
 
 .view-details {
@@ -104,8 +104,13 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+.center {
+    text-align: center;
+}
+
 .view-details:hover {
-    background-color: #66ccff;
+    background-color: #000;
+    /* center the button */
 }
 
 .author {
