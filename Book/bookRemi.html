@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essai de M. Cordier Maxime</title>
+    <title>Essai de M. Uhartegaray Rémi</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -23,8 +23,37 @@
         <div class="book-details">
             <h1>Essai de M. Uhartegaray Rémi</h1>
             <img src="../Data/Book_Rémi.png" alt="Image Livre 1">
-            <p class="author">Auteur: M. uhartegaray Rémi</p>
-            <p class="description">Un superbe livre parlant de psycho d'après M. Uhartegaray. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nunc ut lacus convallis facilisis.</p>
+            <p class="author">Auteur: M. Uhartegaray Rémi</p>
+            
+            <!-- Texte divisé en parties avec attributs ARIA et tabindex -->
+            <div role="region" aria-label="Introduction" tabindex="0">
+                <p aria-live="polite">Bonjour,</p>
+                <p aria-live="polite">La psychologie sociale a toujours été une passion fascinante pour moi, avec ses innombrables nuances et ses observations intrigantes sur le comportement humain.</p>
+            </div>
+
+            <div role="region" aria-label="Expériences" tabindex="0">
+                <p aria-live="polite">Il y a eu des moments où j'ai clairement ressenti le phénomène du "pied dans la bouche", lorsque mes paroles semblaient se retourner contre moi.</p>
+                <p aria-live="polite">Par exemple, lors de discussions animées sur des sujets sensibles, il m'est arrivé de m'emballer un peu trop et de regretter mes paroles par la suite.</p>
+            </div>
+
+            <div role="region" aria-label="Leçon Apprise" tabindex="0">
+                <p aria-live="polite">Ces expériences m'ont appris l'importance de la réflexion avant de parler, en reconnaissant que les mots ont un pouvoir considérable sur la perception des autres.</p>
+            </div>
+
+            <div role="region" aria-label="Autre Expérience" tabindex="0">
+                <p aria-live="polite">D'un autre côté, le concept du "pied dans la porte" a également croisé mon chemin.</p>
+                <p aria-live="polite">J'ai constaté que des petites demandes initiales, auxquelles je répondais favorablement, pouvaient souvent ouvrir la porte à des demandes plus importantes par la suite.</p>
+            </div>
+
+            <div role="region" aria-label="Réflexion Personnelle" tabindex="0">
+                <p aria-live="polite">Ces expériences m'ont incité à approfondir ma compréhension du psychosocial, en reconnaissant que nos interactions quotidiennes sont souvent façonnées par des phénomènes psychologiques complexes.</p>
+                <p aria-live="polite">J'attends avec impatience de continuer à explorer ces aspects intrigants de la psychologie sociale tout au long de mon parcours académique.</p>
+            </div>
+
+            <div role="region" aria-label="Signature" tabindex="0">
+                <p aria-live="polite">Cordialement,<br>[Your Name]</p>
+            </div>
+
         </div>
     </section>
 </body>
