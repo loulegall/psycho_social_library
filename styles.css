@@ -98,10 +98,12 @@ span.label {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 .view-details:hover {
     background-color: #222;
+    text-decoration: none;
 }
 
 .button-details {
