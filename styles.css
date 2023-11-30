@@ -1,17 +1,20 @@
 /* Ajoutez votre style CSS ici */
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 nav {
     background-color: #333;
     color: white;
+    padding: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -19,49 +22,111 @@ nav li {
     margin-right: 20px;
 }
 
-section {
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #66ccff;
+}
+
+.home-section {
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-section {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-li {
+.article {
     border: 1px solid #ddd;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Utilisez la calc pour prendre en compte les marges */
+    box-sizing: border-box;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block; /* Pour éviter l'espace sous les images inline */
 }
 
-/* Nouvelles règles pour le formulaire de contact */
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px; /* Ajustez la largeur selon vos besoins */
-    margin: 0 auto; /* Pour centrer le formulaire sur la page */
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-label {
-    margin-bottom: 5px;
+span.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 input,
 textarea {
+    width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-sizing: border-box;
 }
 
 button {
-    padding: 10px;
     background-color: #333;
     color: white;
+    padding: 10px;
     border: none;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #66ccff;
+}
+
+.view-details {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #66ccff;
+}
+
+.author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+.book-details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Ajoutez ce style à votre fichier styles.css */
+.information {
+    margin-bottom: 15px; /* ou une valeur appropriée selon votre mise en page */
 }

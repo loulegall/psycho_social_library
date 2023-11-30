@@ -12,33 +12,102 @@
     <!-- Barre de navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="equipe.html">Équipe</a></li>
+            <li><a href="index.html" tabindex="1">Accueil</a></li>
+            <li><a href="contact.html" tabindex="2">Contact</a></li>
+            <li><a href="equipe.html" tabindex="3">Équipe</a></li>
         </ul>
     </nav>
     <!-- Contenu de la page d'accueil -->
-    <section>
-        <ul role="list">
-            <li role="listitem">
-                <img src="livre1.jpg" alt="Nom du livre 1">
-                <h2>Nom du livre 1</h2>
-                <p>Auteur: Nom de l'auteur</p>
-                <p>Prix: 19.99 €</p>
-                <!-- Ajoutez plus d'informations sur le livre ici -->
-            </li>
+    <!-- Contenu de la page d'accueil -->
+    <section class="home-section">
+        <div class="article" tabindex="4">
+            <img src="Data/Book_Open.jpg" alt="Image Livre 1">
+            <div>
+                <h2><span class="title">Essai de M. Cordier Maxime</span></h2>
+                <dl>
+                    <div class="information">
+                        <dt><span class="label">Titre:</span></dt>
+                        <dd>Psycho-social par M.CORDIER</dd>
 
-            <li role="listitem">
-                <img src="livre2.jpg" alt="Nom du livre 2">
-                <h2>Nom du livre 2</h2>
-                <p>Auteur: Nom de l'auteur</p>
-                <p>Prix: 24.99 €</p>
-                <!-- Ajoutez plus d'informations sur le livre ici -->
-            </li>
+                        <dt><span class="label">Auteur:</span></dt>
+                        <dd>M. Cordier Maxime</dd>
 
-            <!-- Ajoutez plus d'articles pour chaque livre -->
-        </ul>
+                        <dt><span class="label">Description:</span></dt>
+                        <dd>Un superbe livre parlant de psycho d'après M. Cordier.</dd>
+
+                        <dt><span class="label">Prix:</span></dt>
+                        <dd>19.99 €</dd>
+                    </div>
+                    <div class="button">
+                        <a href="Book/livreMaxime.html" class="view-details" tabindex="8">Voir les détails</a>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+
+        <div class="article">
+            <img src="Data/Book_Open.jpg" alt="Image Livre 2">
+            <div>
+                <h2><span class="title">Essai de M. Le Gall Lou</span></h2>
+                <dl>
+                    <dt><span class="label">Titre:</span></dt>
+                    <dd>Psycho-social par M.Le Gall</dd>
+
+                    <dt><span class="label">Auteur:</span></dt>
+                    <dd>Mme. Le Gall Lou</dd>
+
+                    <dt><span class="label">Description:</span></dt>
+                    <dd>Un superbe livre parlant de psycho d'après M. Cordier.</dd>
+
+                    <dt><span class="label">Prix:</span></dt>
+                    <dd>24.99 €</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="Data/Book_Open.jpg" alt="Image Livre 3">
+            <div>
+                <h2><span class="title">Essai de M. Uhartegaray Rémi</span></h2>
+                <dl>
+                    <dt><span class="label">Titre:</span></dt>
+                    <dd>Psycho-social par M.Uhartegaray</dd>
+
+                    <dt><span class="label">Auteur:</span></dt>
+                    <dd>Auteur 3</dd>
+
+                    <dt><span class="label">Description:</span></dt>
+                    <dd>Description du livre 3.</dd>
+
+                    <dt><span class="label">Prix:</span></dt>
+                    <dd>4.99 €</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="Data/Book_Open.jpg" alt="Image Livre 4">
+            <div>
+                <h2><span class="title">Livre 4</span></h2>
+                <dl>
+                    <dt><span class="label">Titre:</span></dt>
+                    <dd>Livre 4</dd>
+
+                    <dt><span class="label">Auteur:</span></dt>
+                    <dd>Auteur 4</dd>
+
+                    <dt><span class="label">Description:</span></dt>
+                    <dd>Description du livre 4.</dd>
+
+                    <dt><span class="label">Prix:</span></dt>
+                    <dd>99 €</dd>
+                </dl>
+            </div>
+        </div>
+        <!-- Ajoutez plus d'divs pour chaque livre -->
     </section>
+
 
 </body>
 
