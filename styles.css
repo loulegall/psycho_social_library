@@ -1,5 +1,4 @@
-/* Ajoutez votre style CSS ici */
-
+/* -----------------GENERAL-----------------*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
 nav {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav ul {
@@ -33,26 +32,6 @@ nav a:hover {
     color: #66ccff;
 }
 
-.home-section {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.contact-section {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.article {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    width: calc(33.33% - 20px); /* Utilisez la calc pour prendre en compte les marges */
-    box-sizing: border-box;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -69,10 +48,63 @@ form {
     margin: 0 auto;
 }
 
+
+/* -----------------PAGE ACCUEIL----------------- */
+.book-details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.information {
+    margin-bottom: 15px; /* ou une valeur appropriée selon votre mise en page */
+}
+
+.view-details {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+}
+
 span.label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+}
+
+.view-details:hover {
+    background-color: #222;
+}
+
+.home-section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Utilisez la calc pour prendre en compte les marges */
+    box-sizing: border-box;
+}
+
+/* -----------------PAGE CONTACT----------------- */
+.contact-title { 
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.visually-hidden {
+    font-size: 0.8em;
+    color: gray;
 }
 
 input,
@@ -83,35 +115,7 @@ textarea {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #222;
-}
-
-.view-details {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.center {
-    text-align: center;
-}
-
-.view-details:hover {
-    background-color: #000;
-    /* center the button */
-}
+/* -----------------LIVRES DETAILS----------------- */
 
 .author {
     font-weight: bold;
@@ -121,17 +125,4 @@ button:hover {
 .description {
     margin-top: 20px;
     line-height: 1.6;
-}
-
-
-.book-details {
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 600px;
-    margin: 0 auto;
-}
-/* Ajoutez ce style à votre fichier styles.css */
-.information {
-    margin-bottom: 15px; /* ou une valeur appropriée selon votre mise en page */
 }
