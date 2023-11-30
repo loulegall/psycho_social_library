@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <!-- Même entête que index.html -->
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contactez-nous</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-</head>
+    <body>
+        <nav role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+            </ul>
+        </nav>
 
-<body>
-    <!-- Barre de navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="equipe.html">Équipe</a></li>
-        </ul>
-    </nav>
+        <section>
+            <h1 tabindex="0">Contactez-nous</h1>
+            <form action="process_contact.php" method="post" role="form">
+                <!-- Prénom -->
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" name="firstname" required aria-labelledby="firstname-label">
+                <span id="firstname-label" class="visually-hidden">Prénom</span>
 
-    <section class="contact-section">
-        <h1>Contactez-nous</h1>
-        <form action="process_contact.php" method="post" role="form">
-            <!-- Prénom -->
-            <label for="firstname">Prénom:</label>
-            <input type="text" id="firstname" name="firstname" required aria-required="true">
-            <!-- Nom -->
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required aria-required="true">
+                <!-- Nom -->
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required aria-labelledby="name-label">
+                <span id="name-label" class="visually-hidden">Nom</span>
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-required="true">
+                <!-- Email -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required aria-labelledby="email-label">
+                <span id="email-label" class="visually-hidden">Email</span>
 
-            <!-- Message -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                <!-- Message -->
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required aria-labelledby="message-label"></textarea>
+                <span id="message-label" class="visually-hidden">Message</span>
 
-            <!-- Bouton Soumettre -->
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-</body>
-
+                <!-- Bouton Soumettre -->
+                <button type="submit" aria-label="Envoyer le formulaire de contact">Envoyer</button>
+            </form>
+        </section>
+    </body>
 </html>
