@@ -136,6 +136,7 @@ textarea {
     box-sizing: border-box;
 }
 
+
 /* -----------------LIVRES DETAILS----------------- */
 
 .author {
@@ -146,6 +147,15 @@ textarea {
 .description {
     margin-top: 20px;
     line-height: 1.6;
+}
+
+.book-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.book-content p {
+    text-align: justify;
 }
 
 
